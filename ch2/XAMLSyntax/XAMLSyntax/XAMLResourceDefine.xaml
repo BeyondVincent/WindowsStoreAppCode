@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="XAMLSyntax.ResourceDefine"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XAMLSyntax"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!--XAML资源-->
+    <Page.Resources>
+        <!--资源定义-->
+        <LinearGradientBrush x:Key="brush" StartPoint="0 0" EndPoint="0 1">
+            <GradientStop Offset="0" Color="Red" />
+            <GradientStop Offset="1" Color="Blue" />
+        </LinearGradientBrush>
+    </Page.Resources>
+
+    <!--资源使用-->
+    <Grid Background="Green">
+        <Button Content="点击" FontSize="100"
+                Margin="100 200 100 200"
+                Background="{StaticResource brush}"/>
+    </Grid>
+</Page>

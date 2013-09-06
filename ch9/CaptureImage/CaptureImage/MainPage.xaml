@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="CaptureImage.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CaptureImage"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+    <Button Content="获取图片" HorizontalAlignment="Left" Height="72" Margin="219,543,0,0" VerticalAlignment="Top" Width="168" Click="captureImage"/>
+    <Button Content="获取视频" HorizontalAlignment="Left" Height="72" Margin="879,543,0,0" VerticalAlignment="Top" Width="189" Click="captureVideo"/>
+    <Image Name="myImage" HorizontalAlignment="Left" Height="333" Margin="54,150,0,0" VerticalAlignment="Top" Width="531"/>
+    <MediaElement Name="myVideo" HorizontalAlignment="Left" Height="333" Margin="708,150,0,0" VerticalAlignment="Top" Width="543"/>
+</Grid>
+</Page>

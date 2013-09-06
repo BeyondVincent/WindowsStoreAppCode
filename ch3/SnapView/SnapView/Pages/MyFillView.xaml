@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="SnapView.Pages.MyFillView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SnapView.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+    <Grid.RowDefinitions>
+        <RowDefinition/>
+        <RowDefinition/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+    <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0" Background="Red"></StackPanel>
+    <StackPanel Orientation="Vertical" Grid.Row="0"  Grid.Column="1" Background="Yellow"></StackPanel>
+    <StackPanel Orientation="Vertical" Grid.Row="1"  Grid.Column="0" Background="Green"></StackPanel>
+    <StackPanel Orientation="Vertical" Grid.Row="1"  Grid.Column="1" Background="BlueViolet"></StackPanel>
+    <TextBlock Name="ModelText" Text="Fill模式" FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Grid.RowSpan="2" Foreground="Black" Grid.ColumnSpan="2" />
+</Grid>
+</Page>

@@ -1,0 +1,14 @@
+﻿<Page
+    x:Class="AppLifeTime.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppLifeTime"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+    <TextBox Name="MyText" Margin="486,236,475,406"/>
+    <TextBlock Name="Message" Margin="486,408,475,234"/>
+</Grid>
+</Page>

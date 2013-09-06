@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="TileExample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TileExample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="BurlyWood">
+        <Button Content="发送Tile文字 通知" FontSize="32" HorizontalAlignment="Left" Margin="26,303,0,0" VerticalAlignment="Top" Height="60" Width="329" Click="SendTileText" Background="#FFF03911"/>
+        <Button Content="发送Tile图片 通知" FontSize="32" HorizontalAlignment="Left" Margin="380,305,0,0" VerticalAlignment="Top" Height="60" Width="340" Click="SendTilePic" Background="#FFEA3107"/>
+        <Button Content="清除Tile 通知" FontSize="32" HorizontalAlignment="Left" Margin="746,305,0,0" VerticalAlignment="Top" Height="60" Width="279" Click="ClearTile" Background="#FFE63D17"/>
+        <Button Content="导航到SecondaryTile页面" FontSize="32" HorizontalAlignment="Left" Margin="26,407,0,0" VerticalAlignment="Top" Height="60" Width="410" Click="goSecondaryTile" Background="#FFF03911"/>
+        <Button Content="显示Toast通知" FontSize="32" HorizontalAlignment="Left" Margin="26,495,0,0" VerticalAlignment="Top" Height="60" Width="410" Click="showToast" Background="#FFF03911"/>
+        <Button Content="显示数字Badge通知" FontSize="32" HorizontalAlignment="Left" Margin="26,560,0,0" VerticalAlignment="Top" Height="60" Width="350" Click="showBadgeWithNumber" Background="#FFF03911"/>
+        <Button Content="显示图形Badge通知" FontSize="32" HorizontalAlignment="Left" Margin="26,625,0,0" VerticalAlignment="Top" Height="60" Width="350" Click="showBadgeWithGlyph" Background="#FFF03911"/>
+    </Grid>
+</Page>

@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="GridView.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GridView"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid>
+        <GridView x:Name="mainGridView" Grid.Row="1" Background="#FF218B60" SelectionMode="Multiple">
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapGrid Orientation="Vertical" MaximumRowsOrColumns="2" />
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Height="200" Width="200" Background="#33FFFFFF">
+                        <TextBlock Text="{Binding Name}" FontSize="24" Foreground="White" Margin="5" />
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="参加的社团: " FontSize="16" Foreground="White" Margin="5"/>
+                            <TextBlock Text="{Binding TeamName}" FontSize="16" Foreground="White" Margin="5"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="体重kg: " FontSize="16" Foreground="White" Margin="5"/>
+                            <TextBlock Text="{Binding Weight}" FontSize="16" Foreground="White" Margin="5"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="身高cm:" FontSize="16" Foreground="White" Margin="5" />
+                            <TextBlock Text="{Binding Height}" FontSize="16" Foreground="White" Margin="5" />
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+    </Grid>
+
+</Page>

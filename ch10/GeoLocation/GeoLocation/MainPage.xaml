@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="GeoLocation.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GeoLocation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+<Canvas Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+    <TextBlock x:Name="LatitudeTitle" Text="纬度" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="43" Canvas.Top="39"/>
+    <TextBlock x:Name="LatitudeValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="464" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="229" Canvas.Top="31"/>
+    <TextBlock x:Name="LongitudeTitle" Text="经度" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="44" Canvas.Top="147"/>
+    <TextBlock x:Name="LongitudeValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="464" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="232" Canvas.Top="137"/>
+    <TextBlock x:Name="AccuracyTitle" Text="精度" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="43" Canvas.Top="250"/>
+    <TextBlock x:Name="AccuracyValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="464" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="231" Canvas.Top="248"/>
+    <TextBlock x:Name="StatusTitle" Text="状态" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="44" Canvas.Top="349"/>
+    <TextBlock x:Name="StatusValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="464" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="234" Canvas.Top="353"/>
+    <TextBlock x:Name="AltitudeTitle" Text="海拔" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="44" Canvas.Top="449"/>
+    <TextBlock x:Name="AltitudeValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="464" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="234" Canvas.Top="453"/>
+    <TextBlock x:Name="SpeedTitle" Text="速度" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="44" Canvas.Top="553"/>
+    <TextBlock x:Name="SpeedValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="464" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="234" Canvas.Top="557"/>
+    <TextBlock x:Name="HeadingTitle" Text="方向" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="44" Canvas.Top="661"/>
+    <TextBlock x:Name="HeadingValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="464" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="234" Canvas.Top="665"/>
+    <TextBlock x:Name="TimestampTitle" Text="时间" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="620" Canvas.Top="33"/>
+    <TextBlock x:Name="TimestampValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="715" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="615" Canvas.Top="101" Height="108"/>
+    <TextBlock x:Name="GeoCodingTitle" Text="反向地理编码" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="620" Canvas.Top="185"/>
+    <TextBox x:Name="GeoCodingValue" Height="449" Canvas.Left="557" TextWrapping="Wrap" Canvas.Top="261" Width="752"/>
+    <ProgressRing x:Name="ring" Height="100" Canvas.Left="867" Canvas.Top="468" Width="123"/>
+</Canvas>
+</Page>

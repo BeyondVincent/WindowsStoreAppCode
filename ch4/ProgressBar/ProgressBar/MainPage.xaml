@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="ProgressBar.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProgressBar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <ProgressBar Background="Red" Foreground="Blue" Height = "40" Width = "400" Minimum = "0" Maximum = "100" Value = "50" />
+        <ProgressBar Height = "40" Width = "400" Margin="483,448,483,280" IsIndeterminate="True" Foreground="Red" />
+        <ProgressBar Height = "40" Width = "400" Margin="483,527,483,201" IsIndeterminate="True"  />
+
+    </Grid>
+</Page>

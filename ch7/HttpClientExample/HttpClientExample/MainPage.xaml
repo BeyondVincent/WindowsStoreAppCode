@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="HttpClientExample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HttpClientExample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Button Name="BTgetText" Content="GetText&#xD;&#xA;" HorizontalAlignment="Left" Height="57" Margin="149,113,0,0" VerticalAlignment="Top" Width="226" Click="getText"/>
+        <Button Name="BTpostText" Content="PostText&#xD;&#xA;" HorizontalAlignment="Left" Height="57" Margin="858,104,0,0" VerticalAlignment="Top" Width="267" Click="postText"/>
+        <TextBox Name="resultBox" HorizontalAlignment="Left" Height="261" Margin="149,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1082"/>
+        <TextBox Name="postBox" HorizontalAlignment="Left" Height="44" Margin="662,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" Text="破船"/>
+        <TextBox Name="getUrl" HorizontalAlignment="Left" Height="38" Margin="149,43,0,0" TextWrapping="Wrap" Text="http://localhost:3992/GetUserInfoHandle.aspx?id=001" VerticalAlignment="Top" Width="381"/>
+        <TextBox Name="baseAddress" HorizontalAlignment="Left" Height="38" Margin="654,34,0,0" TextWrapping="Wrap" Text="http://localhost:3992/" VerticalAlignment="Top" Width="199"/>
+        <TextBlock Text="baseAddress" FontSize="15" HorizontalAlignment="Left" Margin="566,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="88">
+        	
+        </TextBlock>
+        <TextBox Name="requestUrl" HorizontalAlignment="Left" Height="38" Margin="990,34,0,0" TextWrapping="Wrap" Text="PostDataHandle.aspx" VerticalAlignment="Top" Width="241"/>
+        <TextBlock Text="requestUrl" FontSize="20" HorizontalAlignment="Left" Margin="879,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="106">
+        	
+        </TextBlock>
+        <TextBlock Text="post数据" FontSize="15" HorizontalAlignment="Left" Margin="566,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="88"/>
+        <Button Name="BTcancleGet" IsEnabled="False" Content="取消" HorizontalAlignment="Left" Height="57" Margin="380,113,0,0" VerticalAlignment="Top" Width="105" Click="cancle"/>
+        <Button Name="BTcanclePost" IsEnabled="False" Content="取消" HorizontalAlignment="Left" Height="57" Margin="1130,104,0,0" VerticalAlignment="Top" Width="105" Click="cancle"/>
+        <ProgressRing Name="ring" HorizontalAlignment="Left" Margin="566,272,0,0" VerticalAlignment="Top" Height="105" Width="105"/>
+        <Button Name="BTdownloadImage" Content="下载图片" HorizontalAlignment="Left" Height="57" Margin="163,576,0,0" VerticalAlignment="Top" Width="174" Click="downloadImage"/>
+        <Image Name="imageview" HorizontalAlignment="Left" Height="278" Margin="370,480,0,0" VerticalAlignment="Top" Width="552"/>
+        <Button x:Name="BTdownloadImage_Copy" Click="cancle" Content="取消下载" HorizontalAlignment="Left" Height="57" Margin="163,633,0,0" VerticalAlignment="Top" Width="174"/>
+    </Grid>
+</Page>

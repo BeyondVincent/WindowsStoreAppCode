@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="UseFont.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UseFont"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Name="fontTest" FontFamily="Fonts/博洋规范字3500.TTF#HAKUYOGuiFanZi3500" Text="博洋规范字3500字体库使用" FontSize="50" Margin="91,0,-91,0" ></TextBlock>
+        <TextBlock FontFamily="Fonts/博洋规范字3500.TTF#HAKUYOGuiFanZi3500" Text="博洋规范字3500字体库使用" FontSize="30" Margin="91,85,-91,-85" ></TextBlock>
+        <TextBlock  FontFamily="Fonts/博洋规范字3500.TTF#HAKUYOGuiFanZi3500" Text="博洋规范字3500字体库使用" FontSize="20" Margin="91,176,-91,-176" ></TextBlock>
+    </Grid>
+</Page>

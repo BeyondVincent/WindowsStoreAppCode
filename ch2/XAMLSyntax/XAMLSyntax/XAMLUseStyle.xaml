@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="XAMLSyntax.XAMLUseStyle"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XAMLSyntax"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+<!--XAML资源-->
+<Page.Resources>
+    <Style x:Key="txtblkStyle1" TargetType="TextBlock">
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="FontSize" Value="70" />
+    </Style>
+
+    <!--样式继承-->
+    <Style x:Key="txtblkStyle" 
+        TargetType="TextBlock">
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="FontSize" Value="48" />
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+
+    <Style x:Key="upperLeftStyle"
+        TargetType="TextBlock"
+        BasedOn="{StaticResource txtblkStyle}">
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+    </Style>
+
+    <Style x:Key="lowerRightStyle"
+        TargetType="TextBlock" 
+        BasedOn="{StaticResource txtblkStyle}">
+        <Setter Property="HorizontalAlignment" Value="Right" />
+        <Setter Property="VerticalAlignment" Value="Bottom" />
+    </Style>
+
+</Page.Resources>
+
+    <!--样式使用-->
+    <!--<Grid Background="Green">
+        <TextBlock Name="textBlock1" Text="Windows 8"
+	    Style="{StaticResource txtblkStyle1}" />
+        <TextBlock Name="textBlock2" Text="Windows 8"
+	    Style="{StaticResource txtblkStyle1}"
+	    HorizontalAlignment="Right"
+	    VerticalAlignment="Bottom" />
+    </Grid>-->
+
+<!--样式继承-->
+<Grid Background="Green">
+    <TextBlock Text="左上角" Style="{StaticResource upperLeftStyle}" />
+    <TextBlock Text="居  中" Style="{StaticResource txtblkStyle}"/>
+    <TextBlock Text="右下角" Style="{StaticResource lowerRightStyle}" />
+</Grid>
+
+</Page>

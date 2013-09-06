@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="PlayVideo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PlayVideo"  
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+<Page.Resources>
+    <local:DataConverter x:Key="DataConverter1"/>
+</Page.Resources>
+    <Grid >
+        <MediaElement x:Name="mediaElement" Source="wsw6.wmv" Margin="144,58,146,167" />
+        <Button Content="选择文件" x:Name="SelectFileBT"  Margin="256,639,0,91" Click="SelectBtn_Click"/>
+        <Button x:Name="Play" Content="播放" Margin="379,639,0,91" Click="Play_Click" />
+        <Button x:Name="Pauses" Content="暂停" Margin="458,639,0,91" Click="Pauses_Click" />
+        <Button x:Name="Stop" Content="停止" Margin="556,639,0,91" Click="Stop_Click" />
+        <Slider Name="slider" Value="{Binding ElementName=mediaElement, Path=Volume, Converter={StaticResource DataConverter1}, Mode=TwoWay}"  HorizontalAlignment="Left" Maximum="100" Minimum="0" Margin="684,651,0,0" VerticalAlignment="Top" Width="353"/>
+    </Grid>
+</Page>
